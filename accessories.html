@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+<style>
+
+.sort {
+	display: flex;
+	align-self: flex-end;
+}
+
+.collection-sort {
+ display: flex;
+	flex-direction: column;
+}
+
+.collection-sort:first-child {
+	padding-right: 20px;
+}
+
+label {
+	color: #666;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2em;
+	text-transform: uppercase;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	
+	padding: 2%;
+	flex: 1 16%;
+	
+	background-color: #ffffff;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+}
+
+.product-image img {
+	width: 100%;
+}
+
+.product-info {
+	margin-top: auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+@media ( max-width: 920px ) {
+	
+	.product-card {
+		flex: 1 21%;
+	}
+	
+	.products .product-card:first-child, 
+	.products .product-card:nth-child(2) {
+		flex: 2 46%;
+	}
+	
+}
+
+@media ( max-width: 600px ) {
+	
+	.product-card {
+		flex: 1 46%;
+	}
+	
+}
+
+@media ( max-width: 480px ) {
+	
+	h1 {
+		margin-bottom: 20px;
+	}
+	
+	.product-filter {
+		flex-direction: column;
+	}
+	
+	.sort {
+		align-self: flex-start;
+	}
+	
+}
+
+.product-filter{
+	text-align: center;
+	
+}
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+	<!-- marquee start -->
+	<div class="marquee1">
+		<marquee behavior="" direction="alternate">
+		  HELLO! WELCOME TO THE ARTISTIC NAILS ART 💅</marquee>
+	  </div>
+	  <!-- marquee end -->
+	  <!-- navbar start -->
+	  <div id="nav"></div>
+	  
+
+	  <div class="container-fluid ">
+		<div class="row">
+			<div class="col">
+				<img src="banner1.jpeg" height="500px" width="100%" alt="">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h1 class="text-center ">All Accessories</h1>
+			</div>
+		</div>
+	  </div>
+
+	<section class="products">
+		<div class="product-card ">
+			<div class="product-image">
+				<img src="images/a17.webp">
+			</div>
+			<div class="product-info">
+				<h5>LCN - Light Unit Clt 400 With Case</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a2.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Cuticle Nipper</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a3.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Pedicure Exclusive 5Pcs Set</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a4.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Pedicure Set 1</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a5.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Double Side Foot Callous Rasp</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a6.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Pedicure Exclusive 4Pcs Set</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a7.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Pedicure Set</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a8.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Sapphire Foot File</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a9.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Double Instrument</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a10.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Double Side Foot File</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a11.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Cuticle Knife</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a12.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Cuticle Knife 1</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a13.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Callous Foot File</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a14.webp">
+			</div>
+			<div class="product-info">
+				<h5>LCN - Professional Nail Tip Type 500</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a15.webp">
+			</div>
+			<div class="product-info">
+				<h5>LCN - Brush Set Exclusive</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a16.webp">
+			</div>
+			<div class="product-info">
+				<h5>LCN - Brush Set Exclusive</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a19.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Ceramic Callous Reducer</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+
+		<div class="product-card">
+			<div class="product-image">
+				<img src="images/a20.webp">
+			</div>
+			<div class="product-info">
+				<h5>Titania - Cuticle Scissor</h5>
+				<h6>$99.99</h6>
+			</div>
+		</div>
+		
+	</section>
+
+
+<!-- footer start -->
+<div id="footer"></div>
+<!-- footer end -->
+
+
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
+
+  <script src="home.js"></script>
+</body>
+</html>
